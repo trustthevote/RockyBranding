@@ -1,0 +1,31 @@
+<style type="text/css">
+<!--
+.boxtext {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 25px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+-->
+</style>
+
+Dear <%= @registrant.first_name %>,<br><br>
+
+<table style="float: right; margin: 0 0 15px 15px; width: 275px; border: 8px solid #cc0000;color:black" width="275" cellspacing="0" cellpadding="10">
+  <tr>
+    <td align="center" valign="middle" class="boxtext">Don't forget!<br>
+      You must sign, stamp &amp; mail your form.</td>
+  </tr>
+</table>
+
+Thanks for completing your voter registration application with Rock the Vote. You can download your application <a href="<%= @pdf_url %>">by clicking here</a>.<br><br>
+
+Just a reminder, if you have not already done so, <strong>please make sure to PRINT, SIGN, STAMP, and MAIL your form to the address provided on the form and shown below.</strong><br><br>
+
+<%= @registrar_address %><br><br>
+
+If you have already mailed in your form, you can <a href="<%= @cancel_reminders_url %>">click here</a> to stop receiving reminders about sending it in.  If you want to check on the status of your voter registration application, call your Secretary of State at <%= @registrar_phone %>, or check online at <%= @registrar_url %>.<br><br>
+
+Thanks!

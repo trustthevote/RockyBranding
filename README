@@ -1,0 +1,14 @@
+
+The Rocky Branding Package is the set of files that are required
+to complement those in the Rocky repo. The Branding Package files
+are those that may be changed for a specific deployment, to
+implement branding specific to that deployment, e.g., a 
+different header banner.
+
+The Branding Package has a number of files that start with "example".
+Each of these is a stand-in for a file that must be supplied for
+each deployment. For each of these, 
+	cp examplefoo foo
+and edit the new file to insert the data appropriate to the 
+deployment, often the name the of organization that is 
+sponsoring the deployment.

@@ -1,0 +1,31 @@
+<style type="text/css">
+<!--
+.boxtext {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 25px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+-->
+</style>
+
+Estimado <%= @registrant.first_name %>,<br><br>
+
+<table style="float: right; margin: 0 0 15px 15px; width: 275px; border: 8px solid #cc0000;color:black" width="275" cellspacing="0" cellpadding="10">
+  <tr>
+    <td align="center" valign="middle" class="boxtext">No se te olvide!<br>
+      Tienes que poner un sello, firmar y enviar tu forma por correo.</td>
+  </tr>
+</table>
+
+Gracias por completar tu aplicación de registro para votar en Rock the Vote.  Puedes descargar tu aplicación <a href="<%= @pdf_url %>">dando click aquí</a>.<br><br>
+
+Recuerda, si no lo has hecho aún, <strong>asegúrate de imprimir, firmar y sellar tu forma y enviarla por correo a la dirección indicada en tu forma o a continuación.</strong><br><br>
+
+<%= @registrar_address %><br><br>
+
+Si ya ha enviado por correo en el formulario, puede hacer <a href="<%= @cancel_reminders_url %>">clic aquí</a> para dejar de recibir recordatorios sobre enviarlo pulg.  Si quieres revisar el estatus de tu forma de registro del voto, llama a tu Sectretaría de Estado al <%= @registrar_phone %>, o cheque en línea en <%= @registrar_url %>.<br><br>
+
+Gracias!
